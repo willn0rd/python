@@ -2,7 +2,8 @@ print("Witaj w kalkulatorze!")
 print("1 - dodawanie "
       "2 - odejmowanie "
       "3 - mnożenie "
-      "4 - dzielenie ")
+      "4 - dzielenie"
+      "5 - potęgowanie)
 
 x = input()
 x = int(x)
@@ -53,6 +54,19 @@ elif x == 4:
 
         z = y1 / y2
         print(y1, " : ", y2, " = ", z)
+      
+elif x == 5:
+        print("liczba którą chcesz podnieść do potęgi: ")
+        y1 = input()
+        y1 = int(y1)
 
+        print("potęga do której chcesz podnieść liczbę: ")
+        y2 = input()
+        y2 = int(y2)
+
+        z = y1 ** y2
+
+        print(y1," ^ ", y2, " = ", z)
+      
 else:
     print("zła liczba!")
